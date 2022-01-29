@@ -1,3 +1,4 @@
+#!../venv/bin/python3 
 import math
 import matplotlib.pyplot as plt
 #ToDO
@@ -22,7 +23,7 @@ class Point(object):
         return [self.__x, self.__y]
 
     def set_coord(self, x, y):
-        if not (isinstance(x, (float, int)  or not (isinstance(y, (float, int)) ):
+        if not isinstance(x, (float, int))  or not isinstance(y, (float, int)) :
             raise TypeError("Несоответствующий тип данных для координаты точки, тип данных должен быть целым или вещественным")
         self.__x = x
         self.__y = y

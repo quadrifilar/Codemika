@@ -66,7 +66,7 @@ print(time_stamp)
 if not os.path.exists('log/'):
    os.mkdir("log")
 
-log_file_name="log/"+time_stamp+".csv"
+log_file_name="log/"+time_stamp+".log"
 with open(log_file_name,mode='w', encoding = "utf-8") as log_file:
     log_writer= csv.writer(log_file)
     for city in cities_sample_list:
